@@ -124,7 +124,8 @@ INSERT INTO `slider` (`slide_name`, `slide_image`) VALUES
 -- ============================================================
 CREATE TABLE `customers` (
   `customer_id`      INT(10)       NOT NULL AUTO_INCREMENT,
-  `customer_name`    VARCHAR(255)  NOT NULL,
+  `customer_fname`   VARCHAR(255)  NOT NULL,
+  `customer_lname`   VARCHAR(255)  NOT NULL,
   `customer_email`   VARCHAR(255)  NOT NULL UNIQUE,
   `customer_pass`    VARCHAR(255)  NOT NULL COMMENT 'Store hashed password',
   `customer_country` VARCHAR(100)  NOT NULL,
@@ -141,11 +142,11 @@ CREATE TABLE `customers` (
 
 -- Sample customers
 INSERT INTO `customers`
-  (`customer_name`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_address`, `customer_contact`, `customer_image`, `customer_ip`)
+  (`customer_fname`, `customer_lname`, `customer_email`, `customer_pass`, `customer_country`, `customer_city`, `customer_address`, `customer_contact`, `customer_image`, `customer_ip`)
 VALUES
-  ('John Doe',   'john@example.com',   'pass123', 'Sri Lanka', 'Colombo',  'No 10, Main Street',  '0711234567', 'default.jpg', '127.0.0.1'),
-  ('Jane Smith', 'jane@example.com',   'pass456', 'Sri Lanka', 'Kandy',    'No 5, Temple Road',   '0722345678', 'default.jpg', '127.0.0.2'),
-  ('Tom Perera', 'tom@example.com',    'pass789', 'Sri Lanka', 'Galle',    'No 22, Sea View Lane','0733456789', 'default.jpg', '127.0.0.3');
+  ('John',  'Doe',   'john@example.com',  'pass123', 'Sri Lanka', 'Colombo', 'No 10, Main Street',   '0711234567', 'default.jpg', '127.0.0.1'),
+  ('Jane',  'Smith', 'jane@example.com',  'pass456', 'Sri Lanka', 'Kandy',   'No 5, Temple Road',    '0722345678', 'default.jpg', '127.0.0.2'),
+  ('Tom',   'Perera','tom@example.com',   'pass789', 'Sri Lanka', 'Galle',   'No 22, Sea View Lane', '0733456789', 'default.jpg', '127.0.0.3');
 
 -- ============================================================
 -- TABLE: cart
