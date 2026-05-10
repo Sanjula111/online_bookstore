@@ -1,0 +1,98 @@
+
+    
+        body {
+            margin: 40px;
+            font-family: 'Calibri', sans-serif;
+            background-image: url( "Images/back.jpg"); /* Add your background image here */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            
+
+        }
+        .container {
+            display: flex;  
+            width: 800px;
+            height: 700px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .left {
+            width: 50%;
+            background-color: #00bcd4;
+            color: white;
+            padding: 40px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .left h1 {
+            font-size: 32px;
+            margin-bottom: 10px;
+        }
+        .left p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+        .right {
+            width: 60%;
+            padding: 15px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .right h2 {
+            font-size: 28px;
+            margin-bottom: 30px;
+            color: #00bcd4;
+            text-align: center;
+        }
+        .right input[type="text"],
+        .right input[type="password"] {
+            width: 80%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .right input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .right label {
+            font-size: 20px;
+        }
+        .right button {
+            width: 45%;
+            padding: 10px;
+            border: none;
+            border-radius: 20px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+            text-align: center;
+            
+        }
+        .right a {
+            display: block;
+            margin-top: 20px;
+            text-align: center;
+            color: #00bcd4;
+            text-decoration: none;
+            font-size: 20px;
+            flex-shrink:0;
+        }
+    
+        p{
+            text-decoration: none;
+        }
+        element.style {
+        color: red;
+        }
+    
